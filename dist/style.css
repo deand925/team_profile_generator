@@ -1,1 +1,55 @@
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color:blue;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-wrap: wrap;
+    margin: 20px;
+    color: white;
+    background-color: white;
+    padding: 0;
+    height: 300px;
+    width: 600px;
+    border: white 5px solid;
+}
+
+.card-body{
+    padding: 0;
+}
+.header {
+    background-color:red;
+    width: 100%;
+    text-align: center;
+}
+
+.card-title {
+    padding: 4px;
+}
+.card-subtitle {
+    padding: 8px;
+    color: red;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
