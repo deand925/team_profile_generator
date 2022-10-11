@@ -1,3 +1,5 @@
+
+
 function generateManagerCards(manager) {
     return `
       <div class="card" style="width: 18rem;">
@@ -6,7 +8,7 @@ function generateManagerCards(manager) {
         <h2 class="card-title">${manager.getRole()}</h2>
         <h3 class="card-title">${manager.getName()}</h3>
       </div>
-        <h6 class="card-subtitle mb-2 text-muted">email: ${manager.getEmail()}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></h6>
         <h6 class="card-subtitle mb-2 text-muted">employee id: ${manager.getId()}</h6>
         <h6 class="card-subtitle mb-2 text-muted">office number: ${manager.getOffice()}</h6>
       </div>
@@ -14,6 +16,8 @@ function generateManagerCards(manager) {
       `
   }
   
+
+
   function generateInternCard(intern) {
     let internCard = '';
     for (let i = 0; i < intern.length; i++) {
@@ -24,7 +28,7 @@ function generateManagerCards(manager) {
             <h2 class="card-title">${intern[i].getRole()}</h2>
             <h3 class="card-title">${intern[i].getName()}</h3>
           </div>
-            <h6 class="card-subtitle mb-2 text-muted">email: ${intern[i].getEmail()}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">email: <a href = "mailto: ${intern[i].getEmail()}">${intern[i].getEmail()}</a></h6>
             <h6 class="card-subtitle mb-2 text-muted">employee id: ${intern[i].getId()}</h6>
             <h6 class="card-subtitle mb-2 text-muted">school: ${intern[i].getSchool()}</h6>
           </div>
@@ -44,9 +48,9 @@ function generateManagerCards(manager) {
             <h2 class="card-title">${engineer[i].getRole()}</h2>
             <h3 class="card-title">${engineer[i].getName()}</h3>
           </div>
-            <h6 class="card-subtitle mb-2 text-muted">email: ${engineer[i].getEmail()}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">email: <a href = "mailto: ${engineer[i].getEmail()}">${engineer[i].getEmail()}</a></h6>
             <h6 class="card-subtitle mb-2 text-muted">employee id: ${engineer[i].getId()}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">GitHub: ${engineer[i].getGitHub()}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">GitHub: <a href="https://github.com/${engineer[i].getGitHub()}">${engineer[i].getGitHub()}</a></h6>
           </div>
         </div>
           `
