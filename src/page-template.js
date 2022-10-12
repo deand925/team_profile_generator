@@ -60,8 +60,6 @@ function generateManagerCards(manager) {
   
   
   function generatePage(manager, engineer, intern) {
-    console.log(engineer);
-    console.log(intern);
     return `
   <!DOCTYPE html>
   <html lang="en">

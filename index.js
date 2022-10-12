@@ -85,14 +85,14 @@ const managerPrompt = managerData => {
       }
     ])
       .then(employeeInput => {
-        let { role, name, email, id, gitHub, school, confirmAddEmployee } = employeeInput;
+        let { role, name, id, email, gitHub, school, confirmAddEmployee } = employeeInput;
         let employee;
 
         if (role === "engineer") {
-          employee = new Engineer(name, email, id, gitHub)
+          employee = new Engineer(name, id, email, gitHub)
           engineerArray.push(employee);
         } else if (role === "intern") {
-          employee = new Intern(name, email, id, school)
+          employee = new Intern(name, id, email, school)
           internArray.push(employee);
         }
 
